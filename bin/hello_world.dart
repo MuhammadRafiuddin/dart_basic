@@ -1,8 +1,11 @@
 
 void main(List<String> arguments) {
 
-  String nama = "muhammad Rafiuddin";
+  double number1 = 7;
+  double number2 = 3;
 
-  print(nama);
+  double hasil =  ++number1 + ++number2;
+
+  print(hasil);
 
 }
