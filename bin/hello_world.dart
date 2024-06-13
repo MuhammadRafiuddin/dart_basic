@@ -1,10 +1,13 @@
 
 void main(List<String> arguments) {
 
-  String string = "abc" ;
+  double number =  10;
 
-  int? number  = int.tryParse(string);
+  String str = number.toString();
 
-  print(number);
+  String strr = number.toStringAsFixed(2);
+
+  print(str);
+  print(strr);
 
 }
