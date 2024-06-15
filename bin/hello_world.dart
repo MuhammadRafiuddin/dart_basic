@@ -1,13 +1,14 @@
+import 'dart:io';
 
-void main(List<String> arguments) {
+void main(List<String> arguments){
 
-  double number =  10;
+  print("SILAHKAN MASUKAN NAMA ANDA : ");
+  String? input = stdin.readLineSync();
 
-  String str = number.toString();
-
-  String strr = number.toStringAsFixed(2);
-
-  print(str);
-  print(strr);
+  if(input == "muhammad rafiuddin"){
+    print("Input yang anda masukan benar");
+  }else{
+    print("Input yang anda masukan salah");
+  }
 
 }
