@@ -1,15 +1,17 @@
 import 'dart:io';
 
-void main(List<String> Arguments){
+void main(List<String> arguments){
 
-int number = int.tryParse(stdin.readByteSync());
+String? input = stdin.readLineSync() ?? "no input";
+
+int? number = int.tryParse(input) ?? 0;
 
 if(number > 0){
-  print("bilangan positif");
+  print("positif");
+}else if(number < 0){
+  print("Negativ");
 }else{
-  print("bilangan negatif");
+  print("zero");
 }
-
-
 
 }
